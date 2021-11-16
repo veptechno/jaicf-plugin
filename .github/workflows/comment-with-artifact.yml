@@ -2,7 +2,7 @@ name: Add artifact links to pull request and related issues
 
 on:
   workflow_run:
-    workflows: [ Build JAICF Plugin on PR ]
+    workflows: [ "Build JAICF Plugin on PR" ]
     types: [ completed ]
 
 jobs:
