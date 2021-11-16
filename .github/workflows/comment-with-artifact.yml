@@ -20,8 +20,6 @@ jobs:
 
       - name: Get artifacts id
         id: getartid
-        env:
-          GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: |
           URL=${{ github.event.workflow_run.artifacts_url }}
           echo "$URL"
